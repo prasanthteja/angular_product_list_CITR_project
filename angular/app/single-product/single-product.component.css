@@ -1,0 +1,56 @@
+.position{
+    text-align: center;
+    padding-top: 100px;
+}
+.card {
+    display: flex;
+}
+
+.container {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.product {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    width: 50%;
+    padding: 20px;
+}
+
+.product-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-button{
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    padding-left: 100px;
+}
+
+.btn{
+    color:white;
+    background-color: blue;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    margin-top: 20px;
+}
+
+.delBtn{
+    color:white;
+    background-color:lightblue;
+    padding: 5px;
+    width: 70px;
+    border: none;
+    margin-top: 20px;
+}
+
+.comment{
+    display: flex;
+    justify-content: space-between;
+}

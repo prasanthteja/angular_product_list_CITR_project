@@ -1,0 +1,31 @@
+<div>
+    <div class="position">
+        <div class="back-button">
+            <a [routerLink]="['/']">Go back</a>
+        </div>
+        <div>
+            <div class="product-position">
+                <div class=" product">
+                    <div class="container">
+                        <h4>Name: <b>{{product.product_title}}</b></h4>
+                        <h4>Price: <b>{{product.product_price}}</b></h4>
+                        <h4>Description: <b>{{product.product_desc}}</b></h4>
+                    </div>
+                    <div class="card">
+                        <img src={{product.product_image}} alt="Avatar">
+                    </div>
+                    <div class="container">
+                        <h3>Comments:</h3>
+                        <div class="comment" *ngFor="let comment of comments">
+                            <p>* {{comment.comment}}</p>
+                            <button class="delBtn" (click)="deleteComment(comment.comment_id)">Delete</button>
+                        </div>
+                        <textarea rows="4" cols="80" (keyup)="onKey($event)" #filterName>
+                        </textarea>
+                        <button class="btn" (click)="addComment($event);filterName.value = ''">Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
